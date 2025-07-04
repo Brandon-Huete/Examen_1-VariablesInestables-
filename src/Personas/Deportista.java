@@ -35,7 +35,7 @@ public class Deportista extends Persona{
 
     @Override
     public String toString() {
-        return "Deportista{"+"Nombre=" + nombre +"cedula"  + cedula + "FechaNacimiento=" + FechaNacimiento + ", Disiplina=" + Disiplina + '}';
+        return "Deportista{"+"Nombre=" + nombre +"cedula"  + cedula + "FechaNacimiento=" + FechaNacimiento + ", Disiplina=" + Disiplina +"Categoria=".enum '}';
     }
    
 }
