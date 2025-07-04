@@ -27,7 +27,7 @@ public class Deportista extends Persona{
 
     public Deportista(LocalDateTime FechaNacimiento, String Disiplina, int cedula, String nombre) {
         super(cedula, nombre);
-        this.FechaNacimiento = FechaNacimiento;
+        this.FechaNacimiento.withYear(cedula).minusYears(cedula);
         this.Disiplina = Disiplina;
     }
 
@@ -35,7 +35,7 @@ public class Deportista extends Persona{
 
     @Override
     public String toString() {
-        return "Deportista{"+"Nombre=" + nombre +"cedula"  + cedula + "FechaNacimiento=" + FechaNacimiento + ", Disiplina=" + Disiplina +"Categoria=".enum '}';
+        return "Deportista{"+"Nombre=" + nombre +"cedula"  + cedula + "FechaNacimiento=" + FechaNacimiento + ", Disiplina=" + Disiplina +"Categoria="+Categoria.Categoria '}';
     }
    
 }
