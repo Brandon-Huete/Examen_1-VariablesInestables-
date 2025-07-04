@@ -9,8 +9,8 @@ package Personas;
  * @author Student
  */
 public class Persona {
-    private int cedula;
-    private String nombre;
+    int cedula;
+    String nombre;
 
     public int getCedula() {
         return cedula;
